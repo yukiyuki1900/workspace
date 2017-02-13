@@ -40,7 +40,7 @@
 	现在我们已经有了一个git的项目，一个git项目分为3个部分：**working copy（工作区）**、**staging area（暂存区）**、**datastore（版本库）**
 	借用codecademy git的一张图方便理解：
 	
-	![image](https://github.com/yukiyuki1900/git-something/blob/master/git-parts.png)
+	![image](https://github.com/yukiyuki1900/workspace/blob/master/git/git-parts.png)
 
 	* 工作区为本地的开发环境，可以对文件进行增删查改
 	* 暂存区管理工作区修改的文件，通过git add将工作区修改的数据添加到暂存区
@@ -48,7 +48,7 @@
 
 	如果此时执行```git status```命令，可看到git提示“可将修改添加到暂存区”
 
-	![image](https://github.com/yukiyuki1900/git-something/blob/master/git-status.png)
+	![image](https://github.com/yukiyuki1900/workspace/blob/master/git/git-status.png)
 
 	红色字为本次的修改的文件（新增的README.md文件）
 
@@ -61,13 +61,13 @@
 
 	此时如果执行```git status```命令，可看到文件已添加到暂存区，并提示可以```git rm --cached```来删掉暂存区中已提交的文件
 
-	![image](https://github.com/yukiyuki1900/git-something/blob/master/git-status2.png)
+	![image](https://github.com/yukiyuki1900/workspace/blob/master/git/git-status2.png)
 
 	绿色字为已提交到暂存区的文件
 	
 	如果此时修改了一下README.md的文件，执行```git diff```命令：
 
-	![image](https://github.com/yukiyuki1900/git-something/blob/master/git-diff.png)
+	![image](https://github.com/yukiyuki1900/workspace/blob/master/git/git-diff.png)
 
 	可查看到工作区与暂存区数据的diff
 	再次执行```git add```命令将此时的修改提交到暂存区中
@@ -104,7 +104,7 @@
 	或者
 	git branch -a
 ```
-![image](https://github.com/yukiyuki1900/git-something/blob/master/git-branch.png)
+![image](https://github.com/yukiyuki1900/workspace/blob/master/git/git-branch.png)
 
 本地有两个仓库：lalal 和 master，但远端只有orign/master一个仓库（因为lalal并没有提交到远端）。目前本地是在master分支下。
 
@@ -114,7 +114,7 @@ checkout lalal分支
 	git checkout lalal
 	git branch -a
 ```
-![image](https://github.com/yukiyuki1900/git-something/blob/master/git-branch2.png)
+![image](https://github.com/yukiyuki1900/workspace/blob/master/git/git-branch2.png)
 
 可以看到本地以及切换到lalal分支下了
 
@@ -130,7 +130,7 @@ checkout lalal分支
 ```
 	git merge lalal
 ```
-![image](https://github.com/yukiyuki1900/git-something/blob/master/git-branch3.png)
+![image](https://github.com/yukiyuki1900/workspace/blob/master/git/git-branch3.png)
 
 因为lalal分支没有提交，所以合入没有什么输出。
 
