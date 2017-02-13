@@ -1,6 +1,6 @@
 ## npm版本升级
 
-最近做项目发现我的mac本地的npm版本是2.4，现在npm4都出来了，所以想升级下npm。
+最近做项目发现我的mac本地的npm版本是2.4，现在npm4都出来了，于是想升级下npm。
 
 随意搜了下npm升级的方法，马上看到一篇文章说执行
 
@@ -29,22 +29,22 @@ google一下，发现遇到同样问题的大有人在，原因是执行npm更�
 在``~/``目录下，执行
 
 ```
-	curl http://npmjs.org/install.sh | sh
+	$curl http://npmjs.org/install.sh | sh
 ```
 
 这个命令我在本地执行一直报错，无解。
 
 ### 方法二：
-因为方法一的命令就是将npmjs的脚步down到本地再执行sh，所以我就在这拆成了两个步骤。先将``install.sh`` down下来（看本目录，亲测可用），然后再执行
+因为方法一的命令就是将npmjs的脚本down到本地再执行sh，所以我就在这拆成了两个步骤。先将``install.sh`` down下来（看本目录，亲测可用），然后再执行
 
 ```
-	sh install.sh
+	$sh install.sh
 ```
 
 如果遇到权限问题，则加个sudo
 
 ```
-	sudo sh install.sh
+	$sudo sh install.sh
 ```
 
 再执行``npm -v``
