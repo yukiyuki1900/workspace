@@ -12,7 +12,7 @@
 
 结果这个命令执行完后，再查看npm版本，发现
 
-![image]()
+![image](https://github.com/yukiyuki1900/workspace/blob/master/npm%E7%89%88%E6%9C%AC%E5%8D%87%E7%BA%A7/npm1.png)
 
 坑爹。
 
@@ -49,6 +49,6 @@ google一下，发现遇到同样问题的大有人在，原因是执行npm更�
 
 再执行``npm -v``
 
-![image]()
+![image](https://github.com/yukiyuki1900/workspace/blob/master/npm%E7%89%88%E6%9C%AC%E5%8D%87%E7%BA%A7/npm1.png)
 
 好耶
