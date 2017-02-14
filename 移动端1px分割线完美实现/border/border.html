@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>1px边框测试</title>
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <style>
+        *{padding:0;margin: 0}
+        ul li{border-width:0;}
+        .cc li{
+            -webkit-border-image: url("./img/cc.png") 2 2 stretch;
+            border-image: url("./img/cc.png") 2 2 stretch;
+        }
+        .dd li{-webkit-border-image: url("./img/dd.png") 2 2 stretch;}
+        .ea li{-webkit-border-image: url("./img/ea.png") 2 2 stretch;}
+        ul{list-style:none;padding:10px;line-height:44px;font-size:14px;}
+        ul li {
+            border: 1px solid;
+            margin:5px;
+        }
+        ul li:first-child{font-weight: bold;}
+        select{width:100px;height:28px;display: inline-block;margin-top:5px;}
+    </style>
+</head>
+<body>
+    <h3>border-image实现1px分割线</h3>
+    <ul class="cc">
+        <h4>#cccccc</h4>
+        <li>机型测试颜色测试test线条11111</li>
+    </ul>
+    <ul class="dd">
+        <h4>#dddddd</h4>
+        <li>机型测试颜色测试test线条2222</li>
+    </ul>
+    <ul class="ea">
+        <h4>#eaeaea</h4>
+        <li>机型测试颜色测试test线条3333</li>
+    </ul>
+</body>
+</html>
