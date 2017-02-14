@@ -18,28 +18,110 @@
         }
         .dd li{-webkit-border-image: url("./img/dd.png") 2 2 stretch;}
         .ea li{-webkit-border-image: url("./img/ea.png") 2 2 stretch;}
-        ul{list-style:none;padding:10px;line-height:44px;font-size:14px;}
+        .unit{
+            list-style:none;
+            padding:10px;
+            line-height:44px;
+            font-size:14px;
+        }
         ul li {
             border: 1px solid;
             margin:5px;
         }
-        ul li:first-child{font-weight: bold;}
-        select{width:100px;height:28px;display: inline-block;margin-top:5px;}
+
+        
+        @media only screen and (-webkit-min-device-pixel-ratio: 3), not all
+        .border-top:before, .border-bottom:after {
+            -webkit-transform: scaleY(0.33333);
+        }
+        @media only screen and (-webkit-min-device-pixel-ratio: 2), not all
+        .border-top:before, .border-bottom:after {
+             -webkit-transform: scaleY(0.5); 
+        }
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all
+        .border-top:before, .border-bottom:after {
+             -webkit-transform: scaleY(0.667); 
+        }
+
+        .border-left {
+            border: none;
+            background-image: -webkit-linear-gradient(0deg,#ccc,#ccc 50%,transparent 50%);
+            background-image: -moz-linear-gradient(0deg,#ccc,#ccc 50%,transparent 50%);
+            background-image: -o-linear-gradient(0deg,#ccc,#ccc 50%,transparent 50%);
+            background-image: linear-gradient(270deg,#ccc,#ccc 50%,transparent 50%); 
+            background-size: 1px 100%;
+            background-repeat: no-repeat;
+            background-position: left;
+        }
+
+        .border-right {
+            border: none;
+            background-image: -webkit-linear-gradient(0deg,#ccc,#ccc 50%,transparent 50%);
+            background-image: -moz-linear-gradient(0deg,#ccc,#ccc 50%,transparent 50%);
+            background-image: -o-linear-gradient(0deg,#ccc,#ccc 50%,transparent 50%);
+            background-image: linear-gradient(270deg,#ccc,#ccc 50%,transparent 50%); 
+            background-size: 1px 100%;
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+
+        .border-bottom:after, .border-top:before {
+            width: 100%;
+            height: 1px;
+            left: 0;
+        }
+        .border-bottom:after {
+            bottom: 0;
+            -webkit-transform-origin: center bottom; 
+        }
+        .border-top:after {
+            top: 0;
+            -webkit-transform-origin: center bottom; 
+        }
+
+        .border-top:before, .border-bottom:after, .border-left:before, .border-right:after {
+            content: "";
+            position: absolute;
+            font-size: 0;
+            line-height: 0;
+            background-color: #ccc;
+        }
+
+        *, ::before, ::after {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .unit .test {
+            position: relative;
+            margin: 10px 0;
+        }
     </style>
 </head>
 <body>
     <h3>border-image实现1px分割线</h3>
-    <ul class="cc">
+    <ul class="cc unit">
         <h4>#cccccc</h4>
-        <li>机型测试颜色测试test线条11111</li>
+        <li>border-image机型测试颜色测试test线条11111</li>
     </ul>
-    <ul class="dd">
+    <ul class="dd unit">
         <h4>#dddddd</h4>
-        <li>机型测试颜色测试test线条2222</li>
+        <li>border-image机型测试颜色测试test线条2222</li>
     </ul>
-    <ul class="ea">
+    <ul class="ea unit">
         <h4>#eaeaea</h4>
-        <li>机型测试颜色测试test线条3333</li>
+        <li>border-image机型测试颜色测试test线条3333</li>
     </ul>
+
+
+    <h3 style="padding-top: 20px;border-top: 1px dashed;">::before和::after实现1px分割线</h3>
+    <div class="unit">
+        <h4>#cccccc</h4>
+        <div class="test border-bottom">::before和::after机型测试颜色测试<strong>border-bottom</strong></div>
+        <div class="test border-left">::before和::after机型测试颜色测试<strong>border-top</strong></div>
+        <div class="test border-right">::before和::after机型测试颜色测试<strong>border-top</strong></div>
+        <div class="test border-top">::before和::after机型测试颜色测试<strong>border-top</strong></div>
+    </div>
 </body>
 </html>
