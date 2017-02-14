@@ -21,7 +21,7 @@
     }
 ```
 
-```cc.png```为一张6*6像素的图片。
+``cc.png``为一张6*6像素的图片。
 
 #### 实现原理
 
@@ -41,6 +41,7 @@
 
 
 ### 方法二：使用::after或::before元素实现border
+
 这是我现在比较喜欢使用的也是至今比较流行的方法。对比起使用border-image的方法，使用::after和::before实现border比较灵活，不用依赖图片，可以直接在css定义border的颜色
 
 通过::before和::after设置分割线，然后通过transform将线收缩为1px
