@@ -14,7 +14,7 @@ sourcemaps 为sass源代码和编译后css代码构建了一个映射关系，�
 
 ### 效果
 
-![]()
+![image](https://github.com/yukiyuki1900/workspace/blob/master/chrome%E4%B8%8B%E5%AE%9E%E6%97%B6%E8%B0%83%E8%AF%95%20sass/edit-sass.gif)
 
 ### 调试步骤
 
@@ -31,7 +31,7 @@ sourcemaps 为sass源代码和编译后css代码构建了一个映射关系，�
 
 打开 chrome://flags，找到 devtools 并启动
 
-![image]()
+![image](https://github.com/yukiyuki1900/workspace/blob/master/chrome%E4%B8%8B%E5%AE%9E%E6%97%B6%E8%B0%83%E8%AF%95%20sass/devtools.jpg)
 
 3. 使用 sass 监控输出样式文件
 
@@ -49,25 +49,25 @@ sourcemaps 为sass源代码和编译后css代码构建了一个映射关系，�
 
 进入开发者工具，在 general tab 中 勾选 enable css source maps 和auto-reloadg enerated css，当css发生变化时页面会自动reload
 
-![image]()
+![image](https://github.com/yukiyuki1900/workspace/blob/master/chrome%E4%B8%8B%E5%AE%9E%E6%97%B6%E8%B0%83%E8%AF%95%20sass/source-maps.JPG)
 
 此时打开引用到生成的css文件的页面，查看元素的样式，会发现文件路径已为scss源文件。
 
-![image]()
+![image](https://github.com/yukiyuki1900/workspace/blob/master/chrome%E4%B8%8B%E5%AE%9E%E6%97%B6%E8%B0%83%E8%AF%95%20sass/elements.JPG)
 
 点击进去可查看scss源代码，如下图。
 
-![image]()
+![image](https://github.com/yukiyuki1900/workspace/blob/master/chrome%E4%B8%8B%E5%AE%9E%E6%97%B6%E8%B0%83%E8%AF%95%20sass/hover.JPG)
 
 5. 在workspace 中导入本地代码
 
 进入开发者工具，在workspace tab中导入本地代码
 
-![image]()
+![image](https://github.com/yukiyuki1900/workspace/blob/master/chrome%E4%B8%8B%E5%AE%9E%E6%97%B6%E8%B0%83%E8%AF%95%20sass/addfolder.JPG)
 
 回到source，会看到代码已经导入。 找到scss文件，右键点击 Map to network resource
 
-![image]()
+![image](https://github.com/yukiyuki1900/workspace/blob/master/chrome%E4%B8%8B%E5%AE%9E%E6%97%B6%E8%B0%83%E8%AF%95%20sass/maptonet.jpg)
 
 此时浏览器会有个弹窗，点击确定。
 
