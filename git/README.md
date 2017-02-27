@@ -315,9 +315,9 @@ orign/*       -> branck
 	</tr>
 </table>
 
-### 一些方便的配置
+### 一些配置
 
-为了精简一些git的操作，可以做些配置：
+* 为了精简一些git的操作，可以做些配置：
 ```
 	$git config --global color.ui true   #git命令输出开启颜色
 	$git remote -v   #查看分支地址
@@ -333,3 +333,11 @@ orign/*       -> branck
 	$git config  --global alias.co checkout 
 ```
 
+* 使用git做版本控制的时候，在不同的平台下会遇到行尾结束符的问题，这是因为在window是以回车+换行（CR+LF）两个字符来结束一行，而linux和mac系统是以一个字符LF来换行的，这样遇到多平台的协作开发的时候会遇到扰乱。
+可以通过配置**core.autocrlf**的方式解决换行符的问题
+
+```
+	$git config --global core.autocrlf input
+```
+
+这样在windows里的文件中就会保留CRLF，而在mac和linux，包括仓库中保留LF。
