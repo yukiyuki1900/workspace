@@ -23,13 +23,13 @@
 
 效果图
 
-![image]()
+![image](https://github.com/yukiyuki1900/workspace/blob/master/%E5%B0%8F%E4%BA%8E12px%E5%AD%97%E5%8F%B7%E5%AE%9E%E7%8E%B0/fontSize1.png)
 
 但是细心的观众朋友会发现，文字怎么缩进去啦，虽然文字变小了但是样式歪了呀。
 
 那是因为缩小的是整个div元素，如果给元素加个外边框就可以看到:
 
-![image]()
+![image](https://github.com/yukiyuki1900/workspace/blob/master/%E5%B0%8F%E4%BA%8E12px%E5%AD%97%E5%8F%B7%E5%AE%9E%E7%8E%B0/fontSize2.png)
 
 解决方法也很简单，不要缩小整个div嘛，给文字包一层span标签，缩小这个标签就好了
 
@@ -39,6 +39,10 @@
     </div>
 
 ```
+
+效果如下：
+
+![image](https://github.com/yukiyuki1900/workspace/blob/master/%E5%B0%8F%E4%BA%8E12px%E5%AD%97%E5%8F%B7%E5%AE%9E%E7%8E%B0/fontSize3.png)
 
 看起来还是会缩进一些呢，这个时候再对页面样式做一些微调就好了。比如缩放75%，那就是左右两边分别会流出宽度为12.5%的空白，那么设置下margin-left: -12.5%就好了。注意这个12.5%是以父节点为基准的，所以还得在外面再包一层宽度和文字宽度一样的标签
 
@@ -59,6 +63,6 @@
 
 ```
 
-![image]()
+![image](https://github.com/yukiyuki1900/workspace/blob/master/%E5%B0%8F%E4%BA%8E12px%E5%AD%97%E5%8F%B7%E5%AE%9E%E7%8E%B0/fontSize4.png)
 
 
