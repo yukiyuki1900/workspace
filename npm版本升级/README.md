@@ -49,6 +49,6 @@ google一下，发现遇到同样问题的大有人在，原因是执行npm更�
 
 再执行``npm -v``
 
-![image](https://github.com/yukiyuki1900/workspace/blob/master/npm%E7%89%88%E6%9C%AC%E5%8D%87%E7%BA%A7/npm1.png)
+![image](https://github.com/yukiyuki1900/workspace/blob/master/npm%E7%89%88%E6%9C%AC%E5%8D%87%E7%BA%A7/npm2.png)
 
 好耶
