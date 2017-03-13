@@ -19,7 +19,7 @@
     }
 ```
 
-这样就实现了小于12px的文字。具体可看[test.html]()
+这样就实现了小于12px的文字。具体可看[test.html](https://github.com/yukiyuki1900/workspace/blob/master/%E5%B0%8F%E4%BA%8E12px%E5%AD%97%E5%8F%B7%E5%AE%9E%E7%8E%B0/test.html)
 
 效果图
 
@@ -44,7 +44,7 @@
 
 ![image](https://github.com/yukiyuki1900/workspace/blob/master/%E5%B0%8F%E4%BA%8E12px%E5%AD%97%E5%8F%B7%E5%AE%9E%E7%8E%B0/fontSize3.png)
 
-看起来还是会缩进一些呢，这个时候再对页面样式做一些微调就好了。比如缩放75%，那就是左右两边分别会流出宽度为12.5%的空白，那么设置下margin-left: -12.5%就好了。注意这个12.5%是以父节点为基准的，所以还得在外面再包一层宽度和文字宽度一样的标签
+看起来还是会缩进一些呢，这个时候再对页面样式做一些微调就好了。比如缩放75%，那就是左右两边分别会留出宽度为12.5%的空白，那么设置下margin-left: -12.5%就好了。注意这个12.5%是以父节点为基准的，所以还得在外面再包一层宽度和文字宽度一样的标签
 
 ```
     <div>
@@ -65,4 +65,4 @@
 
 ![image](https://github.com/yukiyuki1900/workspace/blob/master/%E5%B0%8F%E4%BA%8E12px%E5%AD%97%E5%8F%B7%E5%AE%9E%E7%8E%B0/fontSize4.png)
 
-
+具体可看效果[test.html](https://github.com/yukiyuki1900/workspace/blob/master/%E5%B0%8F%E4%BA%8E12px%E5%AD%97%E5%8F%B7%E5%AE%9E%E7%8E%B0/test.html)
