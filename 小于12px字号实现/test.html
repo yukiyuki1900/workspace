@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <title>test</title>
+    <style>
+        div {
+        }
+
+        span {
+            display: inline-block;
+        }
+
+        .inline {
+            display: inline-block;
+        }
+
+        .fontSize12 {
+            font-size: 12px;
+        }
+        .fontSize11 {
+            font-size: 12px;
+            transform: scale(0.92);
+            -webkit-transform: scale(0.92);
+            transform-origin: 50%;
+            -webkit-transform-origin: 50%;
+        }
+        .fontSize10 {
+            font-size: 12px;
+            transform: scale(0.83);
+            -webkit-transform: scale(0.83);
+            transform-origin: 50%;
+            -webkit-transform-origin: 50%;
+        }
+        .fontSize9 {
+            font-size: 12px;
+            transform: scale(0.75);
+            -webkit-transform: scale(0.75);
+            transform-origin: 50%;
+            -webkit-transform-origin: 50%;
+        }
+        .fontSize8 {
+            font-size: 12px;
+            transform: scale(0.67);
+            -webkit-transform: scale(0.67);
+            transform-origin: 50%;
+            -webkit-transform-origin: 50%;
+        }
+    
+        .marginLeft1 {
+            margin-left: -4%;
+        }
+        .marginLeft2 {
+            margin-left: -8.5%;
+        }
+        .marginLeft3 {
+            margin-left: -12.5%;
+        }
+        .marginLeft4 {
+            margin-left: -16.5%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="item fontSize12">font-size: 12px</div>
+    <div class="item fontSize11">font-size: 11px</div>
+    <div class="item fontSize10">font-size: 10px</div>
+    <div class="item fontSize9">font-size: 9px</div>
+    <div class="item fontSize8">font-size: 8px</div>
+
+    <div style="margin-top: 20px;">
+        <span class="fontSize12">font-size: 12px</span>
+    </div>
+    <div>
+        <span class="fontSize11">font-size: 11px</span>
+    </div>
+    <div>
+        <span class="fontSize10">font-size: 10px</span>
+    </div>
+    <div>
+        <span class="fontSize9">font-size: 9px</span>
+    </div>
+    <div>
+        <span class="fontSize8">font-size: 8</span>
+    </div>
+
+
+    <div style="margin-top: 20px;">
+        <div class="inline">
+            <span class="fontSize12">font-size: 12px</span>
+        </div>
+    </div>
+    <div>
+        <div class="inline">
+            <span class="fontSize11 marginLeft1">font-size: 11px</span>
+        </div>
+    </div>
+    <div>
+        <div class="inline">
+            <span class="fontSize10 marginLeft2">font-size: 10px</span>
+        </div>
+    </div>
+    <div>
+        <div class="inline">
+            <span class="fontSize9 marginLeft3">font-size: 9px</span>
+        </div>
+    </div>
+    <div>
+        <div class="inline">
+            <span class="fontSize8 marginLeft4">font-size: 8</span>
+        </div>
+    </div>
+
+</body>
+</html>

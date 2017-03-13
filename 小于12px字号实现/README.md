@@ -1,0 +1,64 @@
+## 小于12px字号实现
+
+我们都知道在浏览器里展现的字体最小字号是12px，即便在css里设置字号小于12px，展示的时候也会是12px。
+
+那如果UE设计的时候就是需要展示为12px呢？毕竟不是所有情况下都能用图片解决的。
+
+这个时候呢可以考虑下使用**transform**，通过缩放的方式实现小于12px的字号
+
+
+```
+    <div class="fontSize9">font-size: 9px</div>
+
+    .fontSize9 {
+        font-size: 12px;
+        transform: scale(0.75);
+        -webkit-transform: scale(0.75);
+        transform-origin: 50%;
+        -webkit-transform-origin: 50%;
+    }
+```
+
+这样就实现了小于12px的文字。具体可看[test.html]()
+
+效果图
+
+![image]()
+
+但是细心的观众朋友会发现，文字怎么缩进去啦，虽然文字变小了但是样式歪了呀。
+
+那是因为缩小的是整个div元素，如果给元素加个外边框就可以看到:
+
+![image]()
+
+解决方法也很简单，不要缩小整个div嘛，给文字包一层span标签，缩小这个标签就好了
+
+```
+    <div>
+        <span class="fontSize9">font-size: 9px</span>
+    </div>
+
+```
+
+看起来还是会缩进一些呢，这个时候再对页面样式做一些微调就好了。比如缩放75%，那就是左右两边分别会流出宽度为12.5%的空白，那么设置下margin-left: -12.5%就好了。注意这个12.5%是以父节点为基准的，所以还得在外面再包一层宽度和文字宽度一样的标签
+
+```
+    <div>
+        <div class="inline">
+            <span class="fontSize9 marginLeft3">font-size: 9px</span>
+        </div>
+    </div>
+    
+    .inline {
+        display: inline-block;
+    }
+    
+    .marginLeft3 {
+        margin-left: -12.5%;
+    }
+
+```
+
+![image]()
+
+
