@@ -6,7 +6,7 @@ css 实现三角形的原理其实很简单，就是利用border来实现的。
 
 ![./border.png](./border.png)
 
-那么实现三角形就很简单了，只要把div的宽高设置为0，然后设置border就好了
+那么实现三角形就很简单了，只要把div的宽高设置为0，然后设置border就好了：[test.html](https://github.com/yukiyuki1900/workspace/blob/master/css%E5%AE%9E%E7%8E%B0%E4%B8%89%E8%A7%92%E5%BD%A2%E5%8F%8A%E5%85%B6%E5%8E%9F%E7%90%86/test.html)
 
 ![./border2.png](./border2.png)
 
